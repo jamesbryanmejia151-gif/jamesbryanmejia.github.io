@@ -1,88 +1,312 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
-    body { background: #f4f4f9; color: #333; line-height: 1.6; }
-    header { background: #4CAF50; color: white; padding: 40px 20px; text-align: center; }
-    nav { background: #333; padding: 10px; text-align: center; }
-    nav a { color: white; text-decoration: none; margin: 0 15px; }
-    section { padding: 40px 20px; max-width: 900px; margin: auto; background: white; margin-top: 20px; border-radius: 10px; }
-    h2 { color: #4CAF50; margin-bottom: 15px; }
-   .skills,.hobbies { display: flex; flex-wrap: wrap; gap: 10px; }
-   .tag { background: #4CAF50; color: white; padding: 8px 15px; border-radius: 20px; }
-   .project { border: 1px solid #ddd; padding: 15px; border-radius: 8px; margin-bottom: 15px; }
-   .project a { color: #4CAF50; text-decoration: none; }
-    footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 20px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>James Bryan Mejia | Portfolio</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>[Your Name]</h1>
-    <p>[Course/Program] Student | Aspiring [Career Goal]</p>
-  </header>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">J<span>B</span>M</a>
 
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#hobbies">Hobbies</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-  </nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p><b>Name:</b> [Your Name]</p>
-    <p><b>Course:</b> [Your Course/Program]</p>
-    <p>Hi! I'm [Your Name]. I love dogs and I enjoy physical training because it keeps me disciplined and healthy.
-    I am passionate about learning web development and technology. My goal is to become a [Career Goal] and build projects that can help people.</p>
-  </section>
 
-  <section id="hobbies">
-    <h2>Hobbies and Interests</h2>
-    <div class="hobbies">
-      <span class="tag">Physical Training</span>
-      <span class="tag">Spending time with Dogs</span>
-      <span class="tag">Reading</span>
-      <span class="tag">Coding</span>
-      <span class="tag">Learning new skills</span>
-    </div>
-  </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <span class="tag">HTML</span>
-      <span class="tag">CSS</span>
-      <span class="tag">JavaScript</span>
-      <span class="tag">Git & GitHub</span>
-      <span class="tag">VS Code</span>
-      <span class="tag">Teamwork</span>
-      <span class="tag">Problem Solving</span>
-    </div>
-  </section>
+        <div class="hero-content">
+            <p class="small-title">WELCOME TO MY PORTFOLIO</p>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project 1: [Project Name]</h3>
-      <p>Short description of your project here. What did you build and what did you learn?</p>
-      <p><b>GitHub Repo:</b> <a href="[your-github-link]" target="_blank">[Link]</a></p>
-      <p><b>Live Demo:</b> <a href="[demo-link]" target="_blank">[Link]</a></p>
-    </div>
-    <div class="project">
-      <h3>Project 2: [Project Name]</h3>
-      <p>Short description of your project here.</p>
-      <p><b>GitHub Repo:</b> <a href="[your-github-link]" target="_blank">[Link]</a></p>
-    </div>
-  </section>
+            <h1>
+                Hi, I'm <span>James Bryan Mejia</span>
+            </h1>
 
-  <footer>
-    <p>© 2026 [Your Name] | Portfolio for GitHub Pages</p>
-  </footer>
+            <h2>BSCS Student & Future IT Professional</h2>
+
+            <p class="hero-text">
+                A passionate Computer Science student who enjoys learning,
+                solving problems, and creating meaningful digital solutions.
+            </p>
+
+            <a href="#about" class="glow-button">Explore My Portfolio</a>
+        </div>
+
+        <!-- Profile Picture -->
+        <div class="profile-container">
+            <div class="profile-glow">
+                <!-- Replace profile.jpg with your own photo -->
+                <img src="profile.jpg" alt="James Bryan Mejia">
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- About Me -->
+    <section id="about" class="section">
+
+        <div class="section-title">
+            <p>GET TO KNOW ME</p>
+            <h2>About <span>Me</span></h2>
+        </div>
+
+        <div class="about-card">
+
+            <div class="about-info">
+                <h3>James Bryan Mejia</h3>
+
+                <p class="course">
+                    BSCS 4th Year - HEXA
+                </p>
+
+                <p>
+                    I am a fourth-year Bachelor of Science in Computer Science
+                    student with a passion for technology, creativity, and
+                    continuous learning. I enjoy discovering new ideas and
+                    applying my knowledge to solve problems through technology.
+                </p>
+
+                <p>
+                    I believe that learning is a continuous journey. As I
+                    prepare for my future career, I aim to develop my technical
+                    abilities while also improving my communication, creativity,
+                    and critical-thinking skills.
+                </p>
+            </div>
+
+            <div class="career-box">
+                <div class="icon">✦</div>
+
+                <h3>Career Goals & Aspirations</h3>
+
+                <p>
+                    My goal is to become a successful IT professional who can
+                    create useful, innovative, and reliable software solutions.
+                    I aspire to continuously improve my programming skills,
+                    gain real-world experience, and contribute to projects
+                    that can make a positive impact.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Hobbies -->
+    <section id="hobbies" class="section dark-section">
+
+        <div class="section-title">
+            <p>WHAT I ENJOY</p>
+            <h2>Hobbies & <span>Interests</span></h2>
+        </div>
+
+        <div class="hobbies-grid">
+
+            <div class="hobby-card">
+                <div class="hobby-icon">📚</div>
+                <h3>Reading Books</h3>
+                <p>
+                    I enjoy reading books because they help me gain knowledge,
+                    discover new ideas, and improve my imagination.
+                </p>
+            </div>
+
+            <div class="hobby-card">
+                <div class="hobby-icon">♟</div>
+                <h3>Playing Chess</h3>
+                <p>
+                    Chess helps me develop strategic thinking, patience,
+                    concentration, and decision-making skills.
+                </p>
+            </div>
+
+            <div class="hobby-card">
+                <div class="hobby-icon">🎨</div>
+                <h3>Painting</h3>
+                <p>
+                    Painting allows me to express my creativity and explore
+                    different ideas through art and colors.
+                </p>
+            </div>
+
+            <div class="hobby-card">
+                <div class="hobby-icon">💪</div>
+                <h3>Healthy Living</h3>
+                <p>
+                    I value a healthy lifestyle by taking care of my body,
+                    maintaining good habits, and staying active.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+
+        <div class="section-title">
+            <p>WHAT I CAN DO</p>
+            <h2>My <span>Skills</span></h2>
+        </div>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <div class="skill-number">01</div>
+
+                <div class="skill-icon">🧩</div>
+
+                <h3>Problem Solving</h3>
+
+                <p>
+                    Ability to analyze challenges, identify possible solutions,
+                    and find effective ways to solve problems.
+                </p>
+
+                <div class="skill-bar">
+                    <span style="width: 90%;"></span>
+                </div>
+            </div>
+
+
+            <div class="skill-card">
+                <div class="skill-number">02</div>
+
+                <div class="skill-icon">🧠</div>
+
+                <h3>Logical Thinking</h3>
+
+                <p>
+                    Able to organize information, recognize patterns, and
+                    approach problems using logical reasoning.
+                </p>
+
+                <div class="skill-bar">
+                    <span style="width: 88%;"></span>
+                </div>
+            </div>
+
+
+            <div class="skill-card">
+                <div class="skill-number">03</div>
+
+                <div class="skill-icon">💬</div>
+
+                <h3>Communication</h3>
+
+                <p>
+                    Ability to express ideas clearly, listen effectively,
+                    and communicate well with others.
+                </p>
+
+                <div class="skill-bar">
+                    <span style="width: 85%;"></span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section id="projects" class="section dark-section">
+
+        <div class="section-title">
+            <p>MY WORK</p>
+            <h2>Featured <span>Project</span></h2>
+        </div>
+
+        <div class="project-container">
+
+            <div class="project-card">
+
+                <div class="project-image">
+                    <div class="project-icon">💻</div>
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-label">WEB APPLICATION</span>
+
+                    <h3>Online Enrollment System</h3>
+
+                    <p>
+                        An online enrollment system designed to make the
+                        enrollment process easier, faster, and more organized.
+                        The system allows students to submit enrollment
+                        information digitally while helping administrators
+                        manage student records efficiently.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Web Development</span>
+                        <span>Database</span>
+                        <span>System Design</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact / Closing -->
+    <section class="closing">
+
+        <div class="closing-content">
+
+            <p class="small-title">THANK YOU FOR VISITING</p>
+
+            <h2>Let's Build Something <span>Great.</span></h2>
+
+            <p>
+                I am always open to learning new things, developing my skills,
+                and creating meaningful technology solutions.
+            </p>
+
+            <a href="#home" class="glow-button">Back to Top ↑</a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 James Bryan Mejia. All Rights Reserved.</p>
+        <p>BSCS 4th Year - HEXA</p>
+    </footer>
 
 </body>
 </html>
+```
